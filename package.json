@@ -1,0 +1,23 @@
+{
+  "name": "fridge-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc src/*.ts --outDir out && node out/server.js",
+    "dev": "nodemon -e ts  --exec \"npm run compile\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "ts-loader": "^5.2.2",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.1.3"
+  }
+}
